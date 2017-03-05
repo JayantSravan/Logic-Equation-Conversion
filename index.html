@@ -1,0 +1,682 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Poiret+One|Teko:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            background-color: #eeeeee;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url('images/min.jpg');
+
+            /* Full height */
+            height: 60%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        a{
+            color: #f2f2f2;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        nav {
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            margin:-8px;
+            background-color:#333;
+            width: 100%;
+            font-family: 'PT Sans', sans-serif;
+            line-height:65px;
+
+        }
+        nav > ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            background: #333;
+
+            float: left;
+        }
+        nav > ul > li {
+            float: left;
+            width: 160px;
+            height: 65px;
+            font-size: large;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 17px;
+            color: #f2f2f2;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        nav > ul > li:hover {
+            background: #888;
+
+        }
+
+        ul.drop-menu {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            width: 100%;
+            padding: 0;
+        }
+        ul.drop-menu li {
+            background: #ababab;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        ul.drop-menu li:hover {
+            background: #606060;
+        }
+        ul.drop-menu li:last-child {
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        ul.drop-menu li {
+            display: none;
+        }
+
+        li:hover > ul.drop-menu li {
+            display: block;
+        }
+        #logo{
+            cursor: none;
+            font-size: 70px;
+            float: left;
+            left: 0;
+            padding: -5px;
+            margin-left: -10px;
+            width: 700px;
+            font-family: 'Poiret One', cursive;
+        }
+        #logo:hover{
+            background: #333;
+            cursor: default;
+        }
+
+        #main-heading{
+            margin: 40px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+            padding-bottom: -20px ;
+            font-size: 50px;
+            border-bottom: solid 2.5px darkcyan;
+            font-family: 'Teko', sans-serif;
+            color: #333333;
+
+        }
+        .content{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 20px;
+
+            margin: 20px; margin-left: 15px;
+        }
+
+        .sub-heading{
+            margin: 20px;
+            margin-left: 15px;
+            font-family: 'Roboto Condensed',sans-serif;
+            font-size: 30px;
+            color: #ff5f2a;
+        }
+        .special{
+            color:#efefef; background-color: #444; display: inline; border: solid #38a8d1 2px;padding: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<nav id="Navigation Container">
+    <ul> <li id="logo">Logic Assignment</li>
+        <li><a href="#intro">Introduction</a>
+
+        </li>
+        <li><a href="#program">The Program</a>
+            <ul class="drop-menu menu-2">
+              <li>  <a href="#task1">Task 1</a></li>
+                <li><a href="#task2">Task 2</a></li>
+                <li><a href="#task3">Task 3</a></li>
+                <li><a href="#task4">Task 4</a></li>
+                <li><a href="#task5">Task 5</a></li>
+            </ul>
+        </li>
+        <li><a href="#output">Output/Efficiency</a>
+            <ul class="drop-menu menu-3">
+                <li><a href="#op1">Task 1</a></li>
+                <li><a href="#op2">Task 2</a></li>
+                <li><a href="#op3">Task 3</a></li>
+                <li><a href="#op4">Task 4</a></li>
+                <li><a href="#op5">Task 5</a></li>
+            </ul>
+        </li>
+        <li><a href="#team">The team</a>
+
+        </li>
+
+
+    </ul>
+</nav>
+<div class="parallax"></div>
+
+<div id="intro" class="subjects">
+    <div id="main-heading">INTRODUCTION</div>
+    <div class="content">This HTML page has been created for the Logic Assignment 1 (2016-2017).
+    <br><br>
+    <h2>Basic Navigation Instructions:</h2><br>
+        1.Click/Hover on the "The Program" link to know about the algorithm and strategies used for generating the various functions as asked in the assignment.
+    <br>You will also find an additional link called the "Testing Algorithm". Click on it to know about the algorithm used so as to test the arious functions used.<br><br>
+    2.Click/Hover on the "OUTPUT/EFFICIENCY" link to know about the output and efficiency of every function.<br>
+        ***Double click on the sub-links to directly access a particular part.
+<br><br><br>
+    Using the program interface:</div>
+</div>
+
+<div id="program" class="subjects">
+    <div id="main-heading">THE PROGRAM</div>
+
+    <div class="content">
+        <div class="sub-heading" id="task1"><br><br>
+            TASK 1:CONVERTING AN INFIX PROPOSITIONAL LOGIC EXPRESSION INTO A PREFIX PROPOSITIONAL LOGIC EXPRESSION
+        </div>
+        <b>FUNCTIONS USED IN THE CODE:</b>infixToPrefix(char,char),reverse(),push(),pop(),operatorCheck(){to check if the charcter in th einfix expression is an operator or not)<br>
+        <b>RETURN TYPE:</b>void for infixToPrefix()<br>
+            <b>PARAMETER:</b>Two arrays of character type-one for infix,the other for prefix<br>
+                <b>IMPORTANT VARIABLES:</b>stack_ini(character array),infix(character array),prefix(character array),token
+<br><br>
+
+      <h3>  ALGORITHM:</h3><br>
+        STEP 1 :Reverse the infix expression<br>
+        STEP 2:Traverse the reversed infix expression and obtain a character at a time
+        <br>If character is not an operator i.e NOT "~ OR > OR * OR +" then<br>
+        Store that character in the prefix array,increment the index of prefix<br>
+        Else if that character is an operator:<br><br>
+          &nbsp; &nbsp;  Then if character is ")" ,push it into stack_ini<br>
+        &nbsp;&nbsp;&nbsp;  Else if character is "(" ,keep on popping stack_ini contents into the prefix array until the top of the stack is ")" character and then pop ")" out of the stack_ini <br>
+        &nbsp; &nbsp;&nbsp;Else push the character into the stack_ini array<br>
+            <br>
+
+        STEP 3:After traversal is done:<br>
+        Till the the time the stack_ini is not empty,popping its contents into prefix array<br>
+        STEP 4:Reverse the prefix string to finally get the PREFIX EXPRESSION<br><br>
+
+        **ALTHOUGH GIVEN IN THE PROBLEM STATEMENT THAT THE CODE IS WELL PARENTHESIZED, WE HAVE PROVIDED AN EXTRA FUNCTIONALITY
+        OF OPERATOR PRECEDENCE IF THE STATEMENT IS NOT WELL-PARENTHESIZED IN SOME CASES(Clear through the code submitted)<br><br>
+        <b>We will explain the algorithm with the help of the following example:</b><br><br>
+        <div class="special"> &nbsp;&nbsp;((~(A+B))*(C>D))&nbsp;&nbsp;  </div>
+        <br><br>
+        STEP 1:Reverse the expression:
+        <br><div class="special">) ) D > C ( * ) ) B + A ( ~ ( (  </div><br><br>
+        STEP 2:Now traversing <br>
+        We first encounter ")" - now stack_ini=")"<br>
+        STEP 3: We again encounter ")",same as step 1<br>
+        STEP 4:We encounter D- so prefix="D"<br>
+        STEP 5: We encounter >,so stack_ini=">))"<br>
+        STEP 6:We encounter C ,so prefix="DC"<br>
+        STEP 7:We encounter ( ,so now- we keep on popping stack_ini contents into prefix until we reach ) and the pop it out<br>
+        So we get -stack_ini=")" and prefix="DC>"<br>
+        STEP 8:We encounter *, so stack _ini="*)"<br>
+        STEP 9:We encounter ) ,then again )- so we get stack_ini='))*)'<br>
+        STEP 10:We encounter B ,so prefix="DC>B"<br>
+        STEP 11:We encouneter +,so stack_ini="+))*)"<br>
+        STEP 12:We encounter A,so prefix="DC>BA"<br>
+        STEP 13:We encounter (,so we get prefix="DC>BA+",stack_ini="")*)"<br>
+        STEP 14:We encounter ~,so stack_ini="~)*)"<br>
+        STEP 15:We encounter ( ,so we get prefix="DC>BA+~" stack_ini="*)"<br>
+        STEP 16:We encounter (,So we gert stack_ini="DC>BA+~*",stack_ini=EMPTY<br>
+        STEP 17:Reverse the prefix -to get <div class="special"> "* ~ + A B > C D "</div><br>
+
+
+
+    </div><hr>
+
+    <div class="content">
+        <div class="sub-heading" id="task2"><br><br>
+            TASK 2:CONVERTING PREFIX EXPRESSION INTO A ROOTED BINARY PARSE TREE
+        </div>
+       <b> FUNCTIONS USED IN THE CODE:</b> buildTree(),pushStack,popStack()<br>
+        <b>  RETURN TYPE:</b>void for buildTree<br>
+
+        <br>
+
+
+
+        <b>STRUCTURE OF THE NODE CREATED FOR THE TREE:</b><br>
+        The Node contains four elements:<br>
+        1)data (Of <div class="special"> char</div> type)<br><br>
+        2)value (Of <div class="special"> int</div> type)(**not needed for this task)<br><br>
+        3)rc (of type <div class="special"> struct node*</div>)<br><br>
+        4)lc (of type <div class="special"> struct node*</div>)<br><br>
+       <b> **IMPORTANT VARIABLES:</b>
+        <br>1)stack(array of type- struct node*)
+        <br>2)root(of type-struct node*)<br><br><br><br>
+        <b>ALGORITHM :</b><br>
+        **We have to traverse the prefix expression form right to left and take one character at a time.<br>
+        STEP 1:Checking:(Repeat this operation till the beginning of the string)<br>
+        If operator-i.e either "> OR + OR *" <br>
+        then-Create a node,<br>store character in data of the node,<br>
+        pop out one node from the stack,store in LC<br>
+        pop out the next node from the stack,store in RC<br>
+        Push this node created into the stack<br>
+        Store the location of this new node in the root<br><br>
+        Else if operand-i.e characters other than "> OR ~ OR + OR *"<br>
+        then-Create a node,<br>store character in data of the node,<br>
+        Initialize the LC and RC to NULL<br>
+        Push this node onto the stack<br>
+        Store the location of this new node in the root variable<br><br>
+        Else
+        if Not operator i.e '~'<br>
+        Then <br>Create a node,<br>store character in data of the node,<br>
+        Initialize LC to NULL <br>
+        Pop out the node form the top of the stack<br>Then push this new node into the stack<br>
+        Store the location of this new node in the root variable.<br>
+<br><br>
+       <b> We will try to explain the algorithm with the help of the above example taken:</b>
+        <br>
+        After the conversion to prefix form-we get the following string:<br><br>
+        <div class="special">* ~ + A B > C D </div>
+        <br><br>
+        **We traverse the string stored in the prefix array from <div class="special"> right to left.</div><br><br>
+
+
+        STEP 1:<br>
+        First we encounter character 'D' which is an operand(by previous defintion) <br>
+        So,we create a node for it and initialize data='D',lc=NULL,RC=NULL<br>
+        And we use the pushStack() function to push it into the stack.<br>
+        After this,we store the location of the top of the stack(presently node storing D) into root.<br>
+        <img src="images/1.png"><br><br><br>
+
+        STEP 2:<br>
+        Now we encounter character 'C' (since we are traversing from right to left):<br>
+        Again create a node for 'C'(operand)<br>.
+        Initialize data='C',lc=NULL,RC=NULL.<br>
+        We use the pushStack() function to push it into the stack.<br>
+        After this, store the location of the top of the stack(presently node storing D) into root.<br>
+        <img src="images/2.png"><br><br><br>
+
+        STEP 3:
+        Now, we encounter character >.<br>
+        Now this is of type operator.<br>
+        So,according to the algorithm-<br>
+        1)Create a node for it<br>
+        2)We will make use "popStack()" method to pop out the topmost content of the stack and store its location in LC.<br>
+        3)Again use popStack() function to pop out the topmost content of the stack and store its location in RC.<br>
+        4)Now,using the pushStack method to push the node of '>' to the stack.<br>
+        5)Store the location of node '>' in root.<br><br>
+
+        <img src="images/3.png"><br><br>
+        <img src="images/4.png"><br><br>
+
+        STEP 4:<br>
+        Next,we encounter character 'B'(operand type)<br>
+        So we repeat step 1.<br>
+        Next,we encounter charcater 'A'(operand type)<br>
+        So we repeat step 2<br>
+        <img src="images/5.png"><br><br>
+
+        STEP 5:<br>
+        Next,we encounter character '+'<br>
+        So,we repeat step 3.<br><br>
+        <img src="images/6.png"><br><br>
+        <img src="images/7.png"><br><br>
+        <img src="images/8%20.png"><br><br>
+
+        STEP 6:<br>
+        Next,we encounter character '~'<br>
+        For this character we create a node-<br>
+        But immediately make LC=NULL<br>
+        Then use popStack() and store in RC the location of the popped out content.<br>
+        Then,use pushStack method to push the node of '~' into the stack.<br>
+        Then,store the location of the node '~' in  root.<br><br>
+        <img src="images/9.png"><br><br>
+        <img src="images/10.png"><br><br>
+
+        STEP 7:<br>
+        Finally,we encounter character '*'<br>
+        Repeat Step3 again.<br>
+        <img src="images/11.png"><br><br>
+
+        SO THE STACK LOOKS LIKE THIS:<br><br>
+        <img src="images/12.png"><br><br>
+
+        FINALLY OUR ROOTED BINARY PARSE TREE WILL LOOK LIKE THIS:<br><br>
+        <img src="images/Parse%20Tree.png"><br><br>
+
+
+
+    </div><hr>
+
+    <div class="content">
+        <div class="sub-heading" id="task3"><br><br>
+            TASK 3:TRAVERSING THE PARSE TREE TO OUTPUT THE INFIX EXPRESSION BACK BY IN-ORDER TRAVERSAL OF THE PARSE TREE
+        </div>
+       <b> FUNCTION TYPE:</b>Recursive<br>
+           <b>FUNCTIONS USED:</b>inOrderTraversal(struct node* a)<br>
+               <b>RETURN TYPE :</b> void<br>
+                   <b> PARAMETER :</b> We pass the pointer to the root of the parse tree as the parameter(pointer of type -struct node later on)<br>
+                       <b> Time Complexity :</b> O(n)<br>
+                           <b> Space Complexity :</b> O(n)<br><br>
+
+        <b>In 0rder Traversal-</b><br>
+
+        <b> Algorithm:</b><br>
+        STEP 1:We check if the pointer root is NULL,if so return<br>
+        &nbsp;&nbsp;Else 1)Print "(" ,<br>2)We again call the inOrderTraversal() function passing the LC of the current node as the argument
+        <br>&nbsp; &nbsp;We continue this process till we reach null pointer as argument<br>
+        &nbsp; &nbsp;Then Due to the recursive nature We'll print the value at the pointer before<br>
+        &nbsp; &nbsp; And then head towards again calling inOrderTraversal() with RC of the current node as the argument<br>
+        &nbsp; &nbsp; This process goes on in a recursive nature,such that when RC's done ")" is printed<br><br>
+
+        <b>**It is better that we understand this problem with an example due its recursive nature</b><br><br>
+        **Consider the parse tree of the previous task<br><br>
+
+        STEP 1:When we call inOrderTraversal function,the address of the root node,i.e the '*' node is passed.<br>
+        STEP 2:Since it is not null, "(" is printed.<br>
+        STEP 3:inOrderTraversal function is again called with the value at LC of "*",i.e the "~" node.<br>
+        STEP 4:Since it is not null,again "(" is printed,then inOrderTraversal function is called with the LC value of the "~"node.<br>
+        STEP 5:Since it is NULL, return is called, and then the value of "a" is the "~" node.<br>
+        STEP 6:Now the previous steps continue till we have reached LC of "A" node which is null,so again return is called and the value of
+        parameter "a" is the "A" node.<br>
+        STEP 7:Next the data i.e "A" is printed.<br>
+        STEP 8:The RC of the "A" node is passed when inOrderTraversal function is again called.<br>
+        STEP 9: The previous steps are again repeated till the time the data at the root node is printed and the corresponding
+        ")" are printed to close the expression<br><br>
+
+        **Therefore th output of the above parse tree - in infix form is:<br><br>
+        <div class="special"> ( ( ~ ( ( A ) + ( B ) ) ) * ( ( C ) > ( D ) ) ) </div>
+        <br><br>
+    </div><br>
+    <hr>
+
+    <div class="content">
+        <div class="sub-heading" id="task4"><br><br>
+            TASK 4:COMPUTE THE HEIGHT OF THE PARSE TREE
+        </div>
+        <b>FUNCTION TYPE:</b> Recursive<br>
+            <b>FUNCTIONS USED:</b>height(struct node*)<br>
+                <b> RETURN TYPE : </b>integer<br>
+                    <b>PARAMETER : </b>We pass the pointer to the root of the parse tree as the parameter.<br>
+                        <b>Time Complexity :</b> O(n)<br>
+                            <b>Space Complexity : </b>O(n)<br><br>
+
+        We basically count the number of nodes in left and right subtree including parent node, and choose the maximum out of the two.
+        <br>
+        Step 1: Recursively calculate height of left and right subtrees of a node.<br>
+
+        a. Return 1 if there is no subtree<br>
+        b. Internal Node returns ( 1 + maximum(height of left subtree,height of
+        right subtree) ) ,then proceed to step 2.
+        <br><br>
+
+        Step 2: Assign height to the node ( Step 1-b)<br><br>
+
+        Go on performing step 1 and step 2 ,function terminates when we return
+        back to the root ,returning the the final height of the tree.<br><br>
+
+        <h3>Example</h3>
+        Example for the height algorithm :<br><br>
+
+        Step 1   : Node (*) is not null .Hence, pass  left node (~)  to the height function.<br>
+        Step 2   : Node (~) is not null, hence pass on left node (null) to the height function.<br>
+        Step 3   : Node is null.Hence ,return 0. Thus, left | (~) = 0. Return back to the function<br>
+        call of node (~).
+        Step 4   : Pass on right node (+) to the height function.<br>
+        Step 5   : Node (+) is not null.Pass on left node (A) to the height function.<br>
+        Step 6   : Node (A) is not null,Pass on left node (null) to te height function.<br>
+        Step 7   : Node passed is null, hence  left | (A) = 0. Return back to the function call by node (A).<br>
+        Step 8   : Pass on right node (null) to the height function.<br>
+        Step 9   : Node passed is null. Hence, right | (A) =0.Return back to function call by node  A.<br>
+        Step 10 : We return back to node (A) and observe that left | (A) =0 and right | (A) =0.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since, left_var is not greater than right_var , 1 is returned to left | (+) ,and we return
+        back to function call by node (+).<br>
+        Step 11 : Right node (B) is passed to height function, and similarly we obtain right | (+) as 1.
+        and return back to node (+).<br>
+        Step 12 : Since,  left | (+)  = 1 and right(+) = 1, and left_value is not greater than right_value,
+        right | (~)  = right_value + 1 = 2, return back to node (~).<br>
+        Step 13 : We observe that left | (~) =0 and right | (~) =2 ,again left_value being smaller than
+        right value, left | (*) =3.We return back to the node (*).<br>
+        Step 14 : By passing right node (>), to the the high function in a similar manner as in steps 1 to 13,
+        we obtain right | (*)  = 2.We return back to the node (*).<br>
+        Step 15 : Since ,  left | (*) =3  >  right | (*)  = 2, final value returned by the height function is 3 +1
+        is  4.Hence, the height of the parse tree is 4.<br><br>
+
+    </div><hr>
+
+    <div class="content">
+        <div class="sub-heading" id="task5"><br><BR>
+            TASK 5:EVALUATING THE TRUTH VALUE OF THE PROPOSITIONAL LOGIC FORMULA<br>
+        </div>
+        Steps involved:<br><br>
+
+        1. User input or random inputs to the atoms of the expression.<br>
+        2. Evaluating the expression using inputs of step 1.<br>
+
+
+        Step 1: Input truth values to the atoms.<br><br>
+
+        <b> A.User Input:</b><br><br>
+
+        Function         : input_truth(struct node *)<br>
+        Type             : recursive,uses inorder traversal<br>
+        Parameter        : We pass the pointer to the root of the parse tree as the
+        parameter.<br>
+        Time Complexity  : O(n)<br>
+        Space Complexity : O(n)<br><br>
+
+        We maintain an array which contains the truth values of all possible literals
+        an user can input( a-z,A-Z).By default, elements of the array are
+        initilised to -1.If the user inputs a literal, it goes to the corresponding
+        index of the literal(utilising the fact that a character has an  ASCII value)
+        and stores True(1) or False(0) depending on the input.If a literal already
+        encountered previously is re-encountered while  traversing the parse tree,
+        the array index of the corresponding literal is checked:<br><br>
+
+        if value is -1     : implies that literal was not encountered
+        before,asks for user input<br>
+        if value is 1 or 0 : skips input asking process<br><br>
+
+
+        We use inOrder traversal, to traverse along the parse tree, request userinput
+        for every leaf.The truth value is stored in a separate data item of the node
+        structure.<br><br>
+        <h3>Example</h3><br>
+
+        Example for input_truth function :<br><br>
+
+        Step 1 : First the root node  (*) is passed on to the input_truth function.Node (*) is not null,
+        pass on right node (~) to the input_truth function.<br>
+        Step 2 : Node (~)  is not null , pass on left node (Null) to the input_truth function.<br>
+        Step 3 : Now, node passed is null. Hence do nothing. Return back to node (~).<br>
+        Step 4 : Left node and right node are both not null.Hence we have yet not reached a leaf.
+        Hence, pass on right node (+) to the input_truth function.<br>
+        Step 5 : Node (+) is not null. Pass on left node (A) to input_truth function.<br>
+        Step 6 : Node (A) is not null.Pass on left node (null) to the input truth function.<br>
+        Step 7 : Node passed is null.Do nothing.Return back to node (A).<br>
+        Step 8 : Left node and right node of (A) are both null. Hence, it is a leaf.An integer i stores
+        ASCII value of A which is 65. So (i&#45;1) = 64.Index 1 of store_array stores truth value of (A).
+        We request user to enter a truth value for A.Truth value is stored in store_array[1]  and also
+        in the variable value, present in the node structure of node (A).<br>
+        Step 9 : Next we pass on right  node of (A) to input_truth function.<br>
+        Step 10 : Since, the node is null, no action is performed and hence forth we return back to the node
+        (A) and completes its function call, and then return back to the node (+).<br>
+        Step 11 : We traverse the whole parse tree in this manner,  requesting user input whenever a leaf is
+        encountered.We also keep a check on the corresponding index of the leaf in store_array, to
+        check whether a value was already assigned to the leaf, in a previous encounter.<br><br>
+
+
+
+
+
+        <b>B.Random Input:</b><br><br>
+
+        Function            : random_input<br>
+        Type                : recursive,uses inorder traversal<br>
+        Parameter           : We pass the pointer to the root of the parse tree as
+        the parameter<br>
+        Time Complexity     : O(n)<br>
+        Space Complexity    : O(n)<br><br>
+
+        Exactly the same as User Input Function except that, assignment of truth
+        values to the leaf is done randomly(either 0 or 1).<br><br><br>
+
+
+
+        Step 2: Evaluate expression using the inputs to the leaves done previously using
+        User Input or Random Input<br>
+
+        Functions used   : evaluate ,find<br>
+        Type             : Recursive, uses inorder traversal<br>
+        Parameter        : We pass the pointer to the root of the parse tree as
+        the parameter<br>
+        Time Complexity  : O(n)<br>
+        Space Complexity : O(n)<br>
+        <br>
+        We use inorder traversal even here.<br><br>
+
+        Step 1:Traverse the parse tree using inorder traversal ,if the node is
+        leaf return its truth value or it can also be an operator node
+        which stores the truth value of the expression of the subtree
+        below that operator node -<br><br>
+
+        left node  = left value<br>
+        right node = right value<br><br>
+
+        to the calling function which is actually the parent operator
+        node.<br>
+
+        Step 2: Pass the left value, right value and operator of the present
+        operator node to the find function, which evaluates the resulting
+        truth value using bitwise operators.<br><br>
+
+        Both the steps are done separately for left subtree and right
+        subtree in a recursive manner and both the return values are
+        passed on to the parent node(operator).The parent node the result-
+        ing truth value, and then again proceeds<br><br>
+
+        Function terminates, when we come back to the root, returning the
+        final truth value of the expession.<br><br>
+
+
+    </div>
+
+<br><hr>
+
+
+<div id="output" class="subjects">
+    <div id="main-heading">OUTPUT/EFFICIENCY</div>
+    <div class="content">
+        All the efficiency graphs have been obtained by running the program on an INTEL i5-5200u CPU@2.20 Ghz(4 GB RAM)-UBUNTU 14.04.
+        <div class="sub-heading">THE INTERFACE<br><br>
+        <img src="images/interface.png"></div><br>
+        1)First the user is asked to enter the type of input-<br>
+        Enter 1 for custom input.<br>
+        Enter 2 for Random input(used for testing purposes)<br><br>
+        2)Then the user is asked to enter an infix statement and following it a menu appears to carry out the required tasks according to the user.
+    <br><hr></div>
+
+    <div class="content">
+        <div class="sub-heading" id="op1">TASK 1<br>
+
+        </div>
+        <H2>The Output</H2>
+    <img src="images/o1.png">
+    <br><H2>The Efficiency Graphs</H2>
+    <img src="images/e1.png"><br>
+    <img src="images/m1.png"></div>
+</div><hr>
+
+    <div class="content">
+        <div class="sub-heading" id="op2">TASK 2<br>
+
+        </div>
+        <H2>The Output</H2>
+        This task has no output because it involves the creation of a parse tree
+        <br><H2>The Efficiency Graphs</H2>
+        The graphs given below gives the time taken and memory used to generate both-the prefix expression and the parse tree
+        <img src="images/e2.png"><br>
+        <img src="images/m2.png">
+    </div>
+    </div>
+<hr>
+
+<div class="content">
+    <div class="sub-heading" id="op3">TASK 3<br>
+
+    </div>
+    <H2>The Output</H2>
+    <img src="images/o2.png">
+    <br><H2>The Efficiency Graphs</H2>
+    The graphs given below gives the time taken and memory utilized to complete 3 tasks-the prefix expression,parse tree and the infix expression
+    <img src="images/e3.png"><br>
+<img src="images/m3.png"></div><hr>
+
+
+<div class="content">
+    <div class="sub-heading" id="op4">TASK 4<br>
+
+    </div>
+    <H2>The Output</H2>
+    <img src="images/o3.png">
+    <br><H2>The Efficiency Graphs</H2>
+    The graphs given below gives the time taken and memory utilized to complete 3 tasks-the prefix expression,parse tree and the height of the tree
+    <img src="images/e4.png"><br>
+    <img src="images/m4.png">
+</div>
+<hr>
+
+<div class="content">
+    <div class="sub-heading" id="op5">TASK 5<br>
+
+    </div>
+    <H2>The Output</H2>
+    <img src="images/o4.png">
+    <br><H2>The Efficiency Graphs</H2>
+    The graphs given below gives the time taken and memory utilized to complete 3 tasks-the prefix expression,parse tree and the generation of the truth value
+    <img src="images/e5.png"><br>
+<img src="images/m5.png"></div>
+<hr>
+
+
+<div id="team" class="subjects">
+    <div id="main-heading">THE TEAM</div><br><br>
+    <div id="person">
+        <img src="images/Shardul.jpg" height="150px" width="150px" style="border-radius: 10%; display: inline; float: left">
+        <div id="personal-info" style="display: inline; vertical-align: middle;font-family: 'Lato', sans-serif; font-size: 20px;color:royalblue; "><br><br>&nbsp; &nbsp; &nbsp;NAME: SHARDUL SHAILENDRA PARAB<br><br>&nbsp;&nbsp;&nbsp;
+        ID:2015A7PS093H</div>
+    </div>
+    <br><br>
+
+    <div id="person">
+        <img src="images/Jayant.jpg" height="150px" width="150px" style="border-radius: 10%; display: inline; float: left">
+        <div id="personal-info" style="display: inline; vertical-align: middle;font-family: 'Lato', sans-serif; font-size: 20px;color:royalblue; "><br><br>&nbsp; &nbsp; &nbsp;NAME:JAYANT SRAVAN TAMARAPALLI<br><br>&nbsp;&nbsp;&nbsp;
+            ID:2015A7PS268H</div>
+    </div>
+
+    <br><br>
+    <div id="person">
+        <img src="images/Shubhadip.jpg" height="150px" width="150px" style="border-radius: 10%; display: inline; float: left">
+        <div id="personal-info" style="display: inline; vertical-align: middle;font-family: 'Lato', sans-serif; font-size: 20px;color:royalblue; "><br><br>&nbsp; &nbsp; &nbsp;NAME: SHUBHADIP JANA<br><br>&nbsp;&nbsp;&nbsp;
+            ID:2015A7PS039H</div>
+    </div>
+
+    <div class="content"></div>
+</div>
+    <br><br>
+    <hr>
+</div>
+</body>
+</html>
